@@ -1,0 +1,3 @@
+<!-- resources/views/components/nav-link.blade.php -->
+@props(['active' => false])                                                                                                                    <!-- Passing the the prop active form navbar-->
+<a class="nav-link fs-6 fw-medium {{$active ? 'text-dark bg-info rounded': 'bg-grey text-white'}}" style="cursor:pointer;" {{$attributes}}>{{$slot}}</a>       <!-- Route name is passed as a slot -->
